@@ -20,6 +20,8 @@
 		BC64DE54193570DE00CA315B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3C193570DE00CA315B /* UIKit.framework */; };
 		BC64DE5C193570DE00CA315B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE5A193570DE00CA315B /* InfoPlist.strings */; };
 		BC64DE5E193570DE00CA315B /* lastpassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE5D193570DE00CA315B /* lastpassTests.m */; };
+		BC64DE7B1935D5A000CA315B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE791935D5A000CA315B /* MainViewController.m */; };
+		BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE7A1935D5A000CA315B /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,9 @@
 		BC64DE59193570DE00CA315B /* lastpassTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lastpassTests-Info.plist"; sourceTree = "<group>"; };
 		BC64DE5B193570DE00CA315B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BC64DE5D193570DE00CA315B /* lastpassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lastpassTests.m; sourceTree = "<group>"; };
+		BC64DE781935D5A000CA315B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BC64DE791935D5A000CA315B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BC64DE7A1935D5A000CA315B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		EF16EB5AE6CB4433970419AA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -154,6 +159,9 @@
 		BC64DE771935CBC100CA315B /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				BC64DE781935D5A000CA315B /* MainViewController.h */,
+				BC64DE791935D5A000CA315B /* MainViewController.m */,
+				BC64DE7A1935D5A000CA315B /* MainViewController.xib */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -239,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
+				BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */,
 				BC64DE4B193570DE00CA315B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */,
+				BC64DE7B1935D5A000CA315B /* MainViewController.m in Sources */,
 				BC64DE45193570DE00CA315B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
