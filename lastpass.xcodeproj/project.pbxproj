@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B14181A83D77433C8B94DCC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF16EB5AE6CB4433970419AA /* libPods.a */; };
+		BC64DE39193570DE00CA315B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE38193570DE00CA315B /* Foundation.framework */; };
+		BC64DE3B193570DE00CA315B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3A193570DE00CA315B /* CoreGraphics.framework */; };
+		BC64DE3D193570DE00CA315B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3C193570DE00CA315B /* UIKit.framework */; };
+		BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE41193570DE00CA315B /* InfoPlist.strings */; };
+		BC64DE45193570DE00CA315B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE44193570DE00CA315B /* main.m */; };
+		BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE48193570DE00CA315B /* AppDelegate.m */; };
+		BC64DE4B193570DE00CA315B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE4A193570DE00CA315B /* Images.xcassets */; };
+		BC64DE52193570DE00CA315B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE51193570DE00CA315B /* XCTest.framework */; };
+		BC64DE53193570DE00CA315B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE38193570DE00CA315B /* Foundation.framework */; };
+		BC64DE54193570DE00CA315B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3C193570DE00CA315B /* UIKit.framework */; };
+		BC64DE5C193570DE00CA315B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE5A193570DE00CA315B /* InfoPlist.strings */; };
+		BC64DE5E193570DE00CA315B /* lastpassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE5D193570DE00CA315B /* lastpassTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC64DE55193570DE00CA315B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC64DE2D193570DE00CA315B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC64DE34193570DE00CA315B;
+			remoteInfo = lastpass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA5C214FC8EE4D309D903236 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BC64DE35193570DE00CA315B /* lastpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lastpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC64DE38193570DE00CA315B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BC64DE3A193570DE00CA315B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BC64DE3C193570DE00CA315B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BC64DE40193570DE00CA315B /* lastpass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lastpass-Info.plist"; sourceTree = "<group>"; };
+		BC64DE42193570DE00CA315B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC64DE44193570DE00CA315B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC64DE46193570DE00CA315B /* lastpass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "lastpass-Prefix.pch"; sourceTree = "<group>"; };
+		BC64DE47193570DE00CA315B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC64DE48193570DE00CA315B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC64DE4A193570DE00CA315B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BC64DE50193570DE00CA315B /* lastpassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lastpassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC64DE51193570DE00CA315B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BC64DE59193570DE00CA315B /* lastpassTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "lastpassTests-Info.plist"; sourceTree = "<group>"; };
+		BC64DE5B193570DE00CA315B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BC64DE5D193570DE00CA315B /* lastpassTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = lastpassTests.m; sourceTree = "<group>"; };
+		EF16EB5AE6CB4433970419AA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC64DE32193570DE00CA315B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC64DE3B193570DE00CA315B /* CoreGraphics.framework in Frameworks */,
+				BC64DE3D193570DE00CA315B /* UIKit.framework in Frameworks */,
+				BC64DE39193570DE00CA315B /* Foundation.framework in Frameworks */,
+				B14181A83D77433C8B94DCC5 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC64DE4D193570DE00CA315B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC64DE52193570DE00CA315B /* XCTest.framework in Frameworks */,
+				BC64DE54193570DE00CA315B /* UIKit.framework in Frameworks */,
+				BC64DE53193570DE00CA315B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC64DE2C193570DE00CA315B = {
+			isa = PBXGroup;
+			children = (
+				BC64DE3E193570DE00CA315B /* lastpass */,
+				BC64DE57193570DE00CA315B /* lastpassTests */,
+				BC64DE37193570DE00CA315B /* Frameworks */,
+				BC64DE36193570DE00CA315B /* Products */,
+				BA5C214FC8EE4D309D903236 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		BC64DE36193570DE00CA315B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE35193570DE00CA315B /* lastpass.app */,
+				BC64DE50193570DE00CA315B /* lastpassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC64DE37193570DE00CA315B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE38193570DE00CA315B /* Foundation.framework */,
+				BC64DE3A193570DE00CA315B /* CoreGraphics.framework */,
+				BC64DE3C193570DE00CA315B /* UIKit.framework */,
+				BC64DE51193570DE00CA315B /* XCTest.framework */,
+				EF16EB5AE6CB4433970419AA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC64DE3E193570DE00CA315B /* lastpass */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE47193570DE00CA315B /* AppDelegate.h */,
+				BC64DE48193570DE00CA315B /* AppDelegate.m */,
+				BC64DE4A193570DE00CA315B /* Images.xcassets */,
+				BC64DE3F193570DE00CA315B /* Supporting Files */,
+			);
+			path = lastpass;
+			sourceTree = "<group>";
+		};
+		BC64DE3F193570DE00CA315B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE40193570DE00CA315B /* lastpass-Info.plist */,
+				BC64DE41193570DE00CA315B /* InfoPlist.strings */,
+				BC64DE44193570DE00CA315B /* main.m */,
+				BC64DE46193570DE00CA315B /* lastpass-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC64DE57193570DE00CA315B /* lastpassTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE5D193570DE00CA315B /* lastpassTests.m */,
+				BC64DE58193570DE00CA315B /* Supporting Files */,
+			);
+			path = lastpassTests;
+			sourceTree = "<group>";
+		};
+		BC64DE58193570DE00CA315B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE59193570DE00CA315B /* lastpassTests-Info.plist */,
+				BC64DE5A193570DE00CA315B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC64DE34193570DE00CA315B /* lastpass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC64DE61193570DE00CA315B /* Build configuration list for PBXNativeTarget "lastpass" */;
+			buildPhases = (
+				E3D5477A48364841BF10577B /* Check Pods Manifest.lock */,
+				BC64DE31193570DE00CA315B /* Sources */,
+				BC64DE32193570DE00CA315B /* Frameworks */,
+				BC64DE33193570DE00CA315B /* Resources */,
+				785288466E2743DFAD2D1C24 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lastpass;
+			productName = lastpass;
+			productReference = BC64DE35193570DE00CA315B /* lastpass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC64DE4F193570DE00CA315B /* lastpassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC64DE64193570DE00CA315B /* Build configuration list for PBXNativeTarget "lastpassTests" */;
+			buildPhases = (
+				BC64DE4C193570DE00CA315B /* Sources */,
+				BC64DE4D193570DE00CA315B /* Frameworks */,
+				BC64DE4E193570DE00CA315B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC64DE56193570DE00CA315B /* PBXTargetDependency */,
+			);
+			name = lastpassTests;
+			productName = lastpassTests;
+			productReference = BC64DE50193570DE00CA315B /* lastpassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC64DE2D193570DE00CA315B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = bstar;
+				TargetAttributes = {
+					BC64DE34193570DE00CA315B = {
+						DevelopmentTeam = 5A5VHB7889;
+					};
+					BC64DE4F193570DE00CA315B = {
+						TestTargetID = BC64DE34193570DE00CA315B;
+					};
+				};
+			};
+			buildConfigurationList = BC64DE30193570DE00CA315B /* Build configuration list for PBXProject "lastpass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BC64DE2C193570DE00CA315B;
+			productRefGroup = BC64DE36193570DE00CA315B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC64DE34193570DE00CA315B /* lastpass */,
+				BC64DE4F193570DE00CA315B /* lastpassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC64DE33193570DE00CA315B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
+				BC64DE4B193570DE00CA315B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC64DE4E193570DE00CA315B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC64DE5C193570DE00CA315B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		785288466E2743DFAD2D1C24 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3D5477A48364841BF10577B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC64DE31193570DE00CA315B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */,
+				BC64DE45193570DE00CA315B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC64DE4C193570DE00CA315B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC64DE5E193570DE00CA315B /* lastpassTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC64DE56193570DE00CA315B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC64DE34193570DE00CA315B /* lastpass */;
+			targetProxy = BC64DE55193570DE00CA315B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC64DE41193570DE00CA315B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC64DE42193570DE00CA315B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BC64DE5A193570DE00CA315B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC64DE5B193570DE00CA315B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC64DE5F193570DE00CA315B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BC64DE60193570DE00CA315B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC64DE62193570DE00CA315B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5C214FC8EE4D309D903236 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lastpass/lastpass-Prefix.pch";
+				INFOPLIST_FILE = "lastpass/lastpass-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39B2FC7F-39D2-4899-A6E8-3F8381BE63B9";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BC64DE63193570DE00CA315B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA5C214FC8EE4D309D903236 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lastpass/lastpass-Prefix.pch";
+				INFOPLIST_FILE = "lastpass/lastpass-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "39B2FC7F-39D2-4899-A6E8-3F8381BE63B9";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BC64DE65193570DE00CA315B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lastpass.app/lastpass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lastpass/lastpass-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "lastpassTests/lastpassTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BC64DE66193570DE00CA315B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lastpass.app/lastpass";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "lastpass/lastpass-Prefix.pch";
+				INFOPLIST_FILE = "lastpassTests/lastpassTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC64DE30193570DE00CA315B /* Build configuration list for PBXProject "lastpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC64DE5F193570DE00CA315B /* Debug */,
+				BC64DE60193570DE00CA315B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC64DE61193570DE00CA315B /* Build configuration list for PBXNativeTarget "lastpass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC64DE62193570DE00CA315B /* Debug */,
+				BC64DE63193570DE00CA315B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC64DE64193570DE00CA315B /* Build configuration list for PBXNativeTarget "lastpassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC64DE65193570DE00CA315B /* Debug */,
+				BC64DE66193570DE00CA315B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC64DE2D193570DE00CA315B /* Project object */;
+}
