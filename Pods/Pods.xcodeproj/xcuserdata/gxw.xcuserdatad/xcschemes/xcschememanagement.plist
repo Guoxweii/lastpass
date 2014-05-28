@@ -14,7 +14,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-hpple.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-lastpassTests-Kiwi.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-lastpassTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -27,22 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>319688B00705452E8AB03DA5</key>
+		<key>147419EBEFEB426A823CCB76</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>323DF2DF077243988F73AE3B</key>
+		<key>551969FDE9BE41C9B2FC9694</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AE57520AE1454095873479AA</key>
+		<key>812DCF8DA0EB444682133D40</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E3B47755D8794075A9219127</key>
+		<key>B4A8DA3D94C349CE94E1AC66</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B86450FE4E0944A88098EB4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0717F59AFF64F90A032E303</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>EB1D8759413A496B9671BA53</key>
 		<dict>
 			<key>primary</key>
 			<true/>

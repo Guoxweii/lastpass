@@ -7,8 +7,13 @@
 //
 
 #import "MainViewController.h"
+#import "MBProgressHUD.h"
+#import "Grubby.h"
 
-@interface MainViewController ()<UITextFieldDelegate>
+@interface MainViewController ()<UITextFieldDelegate> {
+	BOOL loading;
+	MBProgressHUD *HUD;
+}
 
 @end
 
@@ -30,6 +35,8 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     
     [self.urlField becomeFirstResponder];
+    loading = NO;
+    HUD = nil;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +47,41 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
+    if (loading) { return YES; }
+    
+    HUD = [[MBProgressHUD alloc] initWithView:self.view];
+    [self.view addSubview:HUD];
+    HUD.dimBackground = YES;
+    HUD.labelText = @"loading..";
+    [HUD show:YES];
+    
+    [[Grubby instance] setMainCtr:self];
+    [[Grubby instance] fetch_remote_html:_urlField.text];
+    loading = YES;
+    
     return YES;
 }
 
+- (void)showErrorWithInvalidUrl {
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+		[HUD removeFromSuperview];
+        HUD = nil;
+        
+        HUD = [[MBProgressHUD alloc] initWithView:self.view];
+        [self.view addSubview:HUD];
+        HUD.labelText = @"url地址错误.";
+        HUD.mode = MBProgressHUDModeText;
+        HUD.dimBackground = YES;
+        
+        [HUD showAnimated:YES whileExecutingBlock:^{
+            sleep(2);
+        } completionBlock:^{
+            [HUD removeFromSuperview];
+            HUD = nil;
+            
+            loading = NO;
+        }];
+    });
+}
 @end

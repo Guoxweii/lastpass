@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E10332B1A374F4FB4E27D16 /* libPods-lastpassTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A9B3C7BD914224A9F7B900 /* libPods-lastpassTests.a */; };
 		B14181A83D77433C8B94DCC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF16EB5AE6CB4433970419AA /* libPods.a */; };
 		BC64DE39193570DE00CA315B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE38193570DE00CA315B /* Foundation.framework */; };
 		BC64DE3B193570DE00CA315B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3A193570DE00CA315B /* CoreGraphics.framework */; };
@@ -22,6 +23,12 @@
 		BC64DE5E193570DE00CA315B /* lastpassTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE5D193570DE00CA315B /* lastpassTests.m */; };
 		BC64DE7B1935D5A000CA315B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE791935D5A000CA315B /* MainViewController.m */; };
 		BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE7A1935D5A000CA315B /* MainViewController.xib */; };
+		BC64DE7F1935DD5800CA315B /* lastpass.png in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE7E1935DD5800CA315B /* lastpass.png */; };
+		BC64DE821935F9D600CA315B /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE811935F9D600CA315B /* MainViewController.m */; };
+		BC64DE89193602B100CA315B /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE88193602B100CA315B /* AppInfo.m */; };
+		BC64DE8C193603EA00CA315B /* AppInfoRspec.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE8B193603EA00CA315B /* AppInfoRspec.m */; };
+		BC64DE8F193606AF00CA315B /* Grubby.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE8E193606AF00CA315B /* Grubby.m */; };
+		BC64DE911936077200CA315B /* GrubbyRspec.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE901936077200CA315B /* GrubbyRspec.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B0838B9DF454DE98065E719 /* Pods-lastpassTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lastpassTests.xcconfig"; path = "Pods/Pods-lastpassTests.xcconfig"; sourceTree = "<group>"; };
+		27A9B3C7BD914224A9F7B900 /* libPods-lastpassTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lastpassTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5C214FC8EE4D309D903236 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BC64DE35193570DE00CA315B /* lastpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lastpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC64DE38193570DE00CA315B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,6 +64,14 @@
 		BC64DE781935D5A000CA315B /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		BC64DE791935D5A000CA315B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		BC64DE7A1935D5A000CA315B /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		BC64DE7E1935DD5800CA315B /* lastpass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lastpass.png; sourceTree = "<group>"; };
+		BC64DE811935F9D600CA315B /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BC64DE87193602B100CA315B /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		BC64DE88193602B100CA315B /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		BC64DE8B193603EA00CA315B /* AppInfoRspec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoRspec.m; sourceTree = "<group>"; };
+		BC64DE8D193606AF00CA315B /* Grubby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grubby.h; sourceTree = "<group>"; };
+		BC64DE8E193606AF00CA315B /* Grubby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grubby.m; sourceTree = "<group>"; };
+		BC64DE901936077200CA315B /* GrubbyRspec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrubbyRspec.m; sourceTree = "<group>"; };
 		EF16EB5AE6CB4433970419AA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -77,6 +94,7 @@
 				BC64DE52193570DE00CA315B /* XCTest.framework in Frameworks */,
 				BC64DE54193570DE00CA315B /* UIKit.framework in Frameworks */,
 				BC64DE53193570DE00CA315B /* Foundation.framework in Frameworks */,
+				5E10332B1A374F4FB4E27D16 /* libPods-lastpassTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +109,7 @@
 				BC64DE37193570DE00CA315B /* Frameworks */,
 				BC64DE36193570DE00CA315B /* Products */,
 				BA5C214FC8EE4D309D903236 /* Pods.xcconfig */,
+				0B0838B9DF454DE98065E719 /* Pods-lastpassTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +130,7 @@
 				BC64DE3C193570DE00CA315B /* UIKit.framework */,
 				BC64DE51193570DE00CA315B /* XCTest.framework */,
 				EF16EB5AE6CB4433970419AA /* libPods.a */,
+				27A9B3C7BD914224A9F7B900 /* libPods-lastpassTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,11 +138,13 @@
 		BC64DE3E193570DE00CA315B /* lastpass */ = {
 			isa = PBXGroup;
 			children = (
+				BC64DE831936019600CA315B /* models */,
 				BC64DE771935CBC100CA315B /* controllers */,
 				BC64DE47193570DE00CA315B /* AppDelegate.h */,
 				BC64DE48193570DE00CA315B /* AppDelegate.m */,
 				BC64DE4A193570DE00CA315B /* Images.xcassets */,
 				BC64DE3F193570DE00CA315B /* Supporting Files */,
+				BC64DE7D1935DA7B00CA315B /* resources */,
 			);
 			path = lastpass;
 			sourceTree = "<group>";
@@ -141,6 +163,8 @@
 		BC64DE57193570DE00CA315B /* lastpassTests */ = {
 			isa = PBXGroup;
 			children = (
+				BC64DE8A193603B000CA315B /* models */,
+				BC64DE801935F9B300CA315B /* controllers */,
 				BC64DE5D193570DE00CA315B /* lastpassTests.m */,
 				BC64DE58193570DE00CA315B /* Supporting Files */,
 			);
@@ -164,6 +188,42 @@
 				BC64DE7A1935D5A000CA315B /* MainViewController.xib */,
 			);
 			name = controllers;
+			sourceTree = "<group>";
+		};
+		BC64DE7D1935DA7B00CA315B /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE7E1935DD5800CA315B /* lastpass.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		BC64DE801935F9B300CA315B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE811935F9D600CA315B /* MainViewController.m */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		BC64DE831936019600CA315B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE87193602B100CA315B /* AppInfo.h */,
+				BC64DE88193602B100CA315B /* AppInfo.m */,
+				BC64DE8D193606AF00CA315B /* Grubby.h */,
+				BC64DE8E193606AF00CA315B /* Grubby.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		BC64DE8A193603B000CA315B /* models */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE8B193603EA00CA315B /* AppInfoRspec.m */,
+				BC64DE901936077200CA315B /* GrubbyRspec.m */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +252,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BC64DE64193570DE00CA315B /* Build configuration list for PBXNativeTarget "lastpassTests" */;
 			buildPhases = (
+				6CA7035506E245618B45944F /* Check Pods Manifest.lock */,
 				BC64DE4C193570DE00CA315B /* Sources */,
 				BC64DE4D193570DE00CA315B /* Frameworks */,
 				BC64DE4E193570DE00CA315B /* Resources */,
+				D47597CF7BD342CB8DE2C167 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,6 +310,7 @@
 			files = (
 				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
 				BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */,
+				BC64DE7F1935DD5800CA315B /* lastpass.png in Resources */,
 				BC64DE4B193570DE00CA315B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +326,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6CA7035506E245618B45944F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		785288466E2743DFAD2D1C24 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,6 +354,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D47597CF7BD342CB8DE2C167 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-lastpassTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E3D5477A48364841BF10577B /* Check Pods Manifest.lock */ = {
@@ -300,7 +393,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC64DE89193602B100CA315B /* AppInfo.m in Sources */,
 				BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */,
+				BC64DE8F193606AF00CA315B /* Grubby.m in Sources */,
 				BC64DE7B1935D5A000CA315B /* MainViewController.m in Sources */,
 				BC64DE45193570DE00CA315B /* main.m in Sources */,
 			);
@@ -310,7 +405,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC64DE911936077200CA315B /* GrubbyRspec.m in Sources */,
+				BC64DE8C193603EA00CA315B /* AppInfoRspec.m in Sources */,
 				BC64DE5E193570DE00CA315B /* lastpassTests.m in Sources */,
+				BC64DE821935F9D600CA315B /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,12 +519,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lastpass/lastpass-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "lastpass/lastpass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "39B2FC7F-39D2-4899-A6E8-3F8381BE63B9";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/** ${SRCROOT}/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -438,20 +539,25 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lastpass/lastpass-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "lastpass/lastpass-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "39B2FC7F-39D2-4899-A6E8-3F8381BE63B9";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/** ${SRCROOT}/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
 		BC64DE65193570DE00CA315B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0838B9DF454DE98065E719 /* Pods-lastpassTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lastpass.app/lastpass";
+				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -463,6 +569,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "lastpassTests/lastpassTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
@@ -472,8 +579,10 @@
 		};
 		BC64DE66193570DE00CA315B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B0838B9DF454DE98065E719 /* Pods-lastpassTests.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/lastpass.app/lastpass";
+				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -481,6 +590,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "lastpass/lastpass-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "lastpassTests/lastpassTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";

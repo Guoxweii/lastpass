@@ -11,4 +11,5 @@
 @interface MainViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UITextField *urlField;
 
+- (void)showErrorWithInvalidUrl;
 @end
