@@ -29,6 +29,11 @@
 		BC64DE8C193603EA00CA315B /* AppInfoRspec.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE8B193603EA00CA315B /* AppInfoRspec.m */; };
 		BC64DE8F193606AF00CA315B /* Grubby.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE8E193606AF00CA315B /* Grubby.m */; };
 		BC64DE911936077200CA315B /* GrubbyRspec.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE901936077200CA315B /* GrubbyRspec.m */; };
+		BC64DE951936437900CA315B /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE931936437900CA315B /* ListViewController.m */; };
+		BC64DE961936437900CA315B /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE941936437900CA315B /* ListViewController.xib */; };
+		BC64DE9B19364DB000CA315B /* baseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE9919364DB000CA315B /* baseCell.m */; };
+		BC64DE9C19364DB000CA315B /* baseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE9A19364DB000CA315B /* baseCell.xib */; };
+		BC64DE9E193654F600CA315B /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE9D193654F600CA315B /* bg@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,13 @@
 		BC64DE8D193606AF00CA315B /* Grubby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Grubby.h; sourceTree = "<group>"; };
 		BC64DE8E193606AF00CA315B /* Grubby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Grubby.m; sourceTree = "<group>"; };
 		BC64DE901936077200CA315B /* GrubbyRspec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrubbyRspec.m; sourceTree = "<group>"; };
+		BC64DE921936437900CA315B /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		BC64DE931936437900CA315B /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		BC64DE941936437900CA315B /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		BC64DE9819364DB000CA315B /* baseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseCell.h; sourceTree = "<group>"; };
+		BC64DE9919364DB000CA315B /* baseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseCell.m; sourceTree = "<group>"; };
+		BC64DE9A19364DB000CA315B /* baseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = baseCell.xib; sourceTree = "<group>"; };
+		BC64DE9D193654F600CA315B /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		EF16EB5AE6CB4433970419AA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -138,6 +150,7 @@
 		BC64DE3E193570DE00CA315B /* lastpass */ = {
 			isa = PBXGroup;
 			children = (
+				BC64DE9719364D8200CA315B /* views */,
 				BC64DE831936019600CA315B /* models */,
 				BC64DE771935CBC100CA315B /* controllers */,
 				BC64DE47193570DE00CA315B /* AppDelegate.h */,
@@ -186,6 +199,9 @@
 				BC64DE781935D5A000CA315B /* MainViewController.h */,
 				BC64DE791935D5A000CA315B /* MainViewController.m */,
 				BC64DE7A1935D5A000CA315B /* MainViewController.xib */,
+				BC64DE921936437900CA315B /* ListViewController.h */,
+				BC64DE931936437900CA315B /* ListViewController.m */,
+				BC64DE941936437900CA315B /* ListViewController.xib */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -193,6 +209,7 @@
 		BC64DE7D1935DA7B00CA315B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				BC64DE9D193654F600CA315B /* bg@2x.png */,
 				BC64DE7E1935DD5800CA315B /* lastpass.png */,
 			);
 			name = resources;
@@ -224,6 +241,16 @@
 				BC64DE901936077200CA315B /* GrubbyRspec.m */,
 			);
 			name = models;
+			sourceTree = "<group>";
+		};
+		BC64DE9719364D8200CA315B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				BC64DE9819364DB000CA315B /* baseCell.h */,
+				BC64DE9919364DB000CA315B /* baseCell.m */,
+				BC64DE9A19364DB000CA315B /* baseCell.xib */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,8 +335,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC64DE9C19364DB000CA315B /* baseCell.xib in Resources */,
 				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
 				BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */,
+				BC64DE9E193654F600CA315B /* bg@2x.png in Resources */,
+				BC64DE961936437900CA315B /* ListViewController.xib in Resources */,
 				BC64DE7F1935DD5800CA315B /* lastpass.png in Resources */,
 				BC64DE4B193570DE00CA315B /* Images.xcassets in Resources */,
 			);
@@ -393,8 +423,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC64DE9B19364DB000CA315B /* baseCell.m in Sources */,
 				BC64DE89193602B100CA315B /* AppInfo.m in Sources */,
 				BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */,
+				BC64DE951936437900CA315B /* ListViewController.m in Sources */,
 				BC64DE8F193606AF00CA315B /* Grubby.m in Sources */,
 				BC64DE7B1935D5A000CA315B /* MainViewController.m in Sources */,
 				BC64DE45193570DE00CA315B /* main.m in Sources */,

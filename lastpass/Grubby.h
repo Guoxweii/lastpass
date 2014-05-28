@@ -11,7 +11,9 @@
 
 @interface Grubby : NSObject
 @property (nonatomic,retain) MainViewController *mainCtr;
+@property (nonatomic,retain) NSMutableDictionary *dataSource;
 
 + (Grubby *)instance;
 - (void)fetch_remote_html:(NSString *)url;
+- (void)resetDataSource;
 @end

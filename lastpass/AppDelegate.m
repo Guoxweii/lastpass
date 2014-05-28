@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "ListViewController.h"
 
 @implementation AppDelegate
 
@@ -44,6 +45,12 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)redirect_to_list {
+	ListViewController *listCtr = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
+    UINavigationController *baseCtr = [[UINavigationController alloc] initWithRootViewController:listCtr];
+    self.window.rootViewController = baseCtr;
 }
 
 @end

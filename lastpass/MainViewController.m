@@ -9,6 +9,7 @@
 #import "MainViewController.h"
 #import "MBProgressHUD.h"
 #import "Grubby.h"
+#import "AppDelegate.h"
 
 @interface MainViewController ()<UITextFieldDelegate> {
 	BOOL loading;
@@ -47,17 +48,20 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
-    if (loading) { return YES; }
-    
-    HUD = [[MBProgressHUD alloc] initWithView:self.view];
-    [self.view addSubview:HUD];
-    HUD.dimBackground = YES;
-    HUD.labelText = @"loading..";
-    [HUD show:YES];
+ 
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (loading) { return; }
+        loading = YES;
+        
+        HUD = [[MBProgressHUD alloc] initWithView:self.view];
+        [self.view addSubview:HUD];
+        HUD.dimBackground = YES;
+        HUD.labelText = @"loading..";
+        [HUD show:YES];
+    });
     
     [[Grubby instance] setMainCtr:self];
     [[Grubby instance] fetch_remote_html:_urlField.text];
-    loading = YES;
     
     return YES;
 }
@@ -65,8 +69,10 @@
 - (void)showErrorWithInvalidUrl {
     
     dispatch_async(dispatch_get_main_queue(), ^{
-		[HUD removeFromSuperview];
-        HUD = nil;
+		if (HUD) {
+            [HUD removeFromSuperview];
+            HUD = nil;
+        }
         
         HUD = [[MBProgressHUD alloc] initWithView:self.view];
         [self.view addSubview:HUD];
@@ -77,11 +83,29 @@
         [HUD showAnimated:YES whileExecutingBlock:^{
             sleep(2);
         } completionBlock:^{
-            [HUD removeFromSuperview];
-            HUD = nil;
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (HUD) {
+                    [HUD removeFromSuperview];
+                    HUD = nil;
+                }
+                
+                loading = NO;
+            });
             
-            loading = NO;
         }];
     });
+}
+
+- (void)fetchResultSuccess {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        if (HUD) {
+            [HUD removeFromSuperview];
+            HUD = nil;
+        }
+        loading = NO;
+    });
+    
+	AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [delegate redirect_to_list];
 }
 @end

@@ -12,4 +12,5 @@
 @property (strong, nonatomic) IBOutlet UITextField *urlField;
 
 - (void)showErrorWithInvalidUrl;
+- (void)fetchResultSuccess;
 @end
