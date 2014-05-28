@@ -1,10 +1,22 @@
 PODS:
+  - hpple (0.2.0)
   - JSONKit (1.5pre)
+  - Kiwi (2.2.4):
+    - Kiwi/SenTestingKit
+  - Kiwi/ARC (2.2.4)
+  - Kiwi/NonARC (2.2.4)
+  - Kiwi/SenTestingKit (2.2.4):
+    - Kiwi/ARC
+    - Kiwi/NonARC
 
 DEPENDENCIES:
+  - hpple (~> 0.2.0)
   - JSONKit (~> 1.5pre)
+  - Kiwi (~> 2.2.4)
 
 SPEC CHECKSUMS:
+  hpple: f4eb7c21a8db83ec264e5d614ec7509e10e5adec
   JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
+  Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
 
-COCOAPODS: 0.32.1
+COCOAPODS: 0.33.1

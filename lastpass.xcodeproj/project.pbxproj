@@ -113,6 +113,7 @@
 		BC64DE3E193570DE00CA315B /* lastpass */ = {
 			isa = PBXGroup;
 			children = (
+				BC64DE771935CBC100CA315B /* controllers */,
 				BC64DE47193570DE00CA315B /* AppDelegate.h */,
 				BC64DE48193570DE00CA315B /* AppDelegate.m */,
 				BC64DE4A193570DE00CA315B /* Images.xcassets */,
@@ -148,6 +149,13 @@
 				BC64DE5A193570DE00CA315B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC64DE771935CBC100CA315B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
