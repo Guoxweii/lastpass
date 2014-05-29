@@ -64,6 +64,7 @@
         [self.view addSubview:HUD];
         HUD.dimBackground = YES;
         HUD.labelText = @"loading..";
+        HUD.yOffset = -120.0f;
         [HUD show:YES];
     });
     
@@ -86,6 +87,7 @@
         HUD.labelText = @"url地址错误.";
         HUD.mode = MBProgressHUDModeText;
         HUD.dimBackground = YES;
+        HUD.yOffset = -120.0f;
         
         [HUD showAnimated:YES whileExecutingBlock:^{
             sleep(2);
