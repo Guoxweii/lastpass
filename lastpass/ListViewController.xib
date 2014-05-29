@@ -25,7 +25,7 @@
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ihp-Wr-1yK">
             <rect key="frame" x="0.0" y="0.0" width="83" height="46"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <fontDescription key="fontDescription" type="system" pointSize="18"/>
             <state key="normal" title="重置">
                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
             </state>

@@ -14,7 +14,7 @@
 #import "AppDelegate.h"
 #import "AppInfo.h"
 
-@interface ListViewController ()
+@interface ListViewController ()<UIActionSheetDelegate>
 
 @end
 
@@ -76,8 +76,6 @@
     } else {
     	logoUrl = [NSString stringWithFormat:@"%@://%@/favicon.ico",[passwordUrl scheme],[passwordUrl host]];
     }
-    
-    NSLog(@"the image url is %@", logoUrl);
     
     [cell.logo setImageWithURL:[NSURL URLWithString:logoUrl]
                 placeholderImage:[UIImage imageNamed:@"bg"]];
@@ -142,6 +140,22 @@
 }
 
 - (IBAction)reset:(id)sender {
+    UIActionSheet *resetSheet = [[UIActionSheet alloc] initWithTitle:nil
+                                                            delegate:self
+                                                   cancelButtonTitle:@"取消"
+                                              destructiveButtonTitle:@"重置"
+                                                   otherButtonTitles:nil,nil];
+    resetSheet.actionSheetStyle = UIActionSheetStyleDefault;
+    [resetSheet showInView:self.view];
+}
+
+- (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+	if (buttonIndex == 0) {
+        [self resetList];
+    }
+}
+
+- (void)resetList {
     [[AppInfo instance] store_password_info:nil];
     
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
