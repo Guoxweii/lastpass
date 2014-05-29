@@ -41,6 +41,11 @@ install_resource()
       ;;
   esac
 }
+install_resource "APPinViewController/APPinVIewController/Resources/APPinViewController.xib"
+install_resource "APPinViewController/APPinVIewController/Resources/pinViewSelected.png"
+install_resource "APPinViewController/APPinVIewController/Resources/pinViewSelected@2x.png"
+install_resource "APPinViewController/APPinVIewController/Resources/pinViewUnSelected.png"
+install_resource "APPinViewController/APPinVIewController/Resources/pinViewUnSelected@2x.png"
 
 rsync -avr --copy-links --no-relative --exclude '*/.svn/*' --files-from="$RESOURCES_TO_COPY" / "${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
 if [[ "${ACTION}" == "install" ]]; then

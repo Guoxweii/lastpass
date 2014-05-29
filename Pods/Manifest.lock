@@ -1,4 +1,5 @@
 PODS:
+  - APPinViewController (1.0.2)
   - hpple (0.2.0)
   - JSONKit (1.5pre)
   - Kiwi (2.2.4):
@@ -17,6 +18,7 @@ PODS:
   - SDWebImage/Core (3.6)
 
 DEPENDENCIES:
+  - APPinViewController (~> 1.0.2)
   - hpple (~> 0.2.0)
   - JSONKit (~> 1.5pre)
   - Kiwi (~> 2.2.4)
@@ -25,6 +27,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.6)
 
 SPEC CHECKSUMS:
+  APPinViewController: c15366d37316d02383a8eb5e7575b6f193f61691
   hpple: f4eb7c21a8db83ec264e5d614ec7509e10e5adec
   JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
   Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba

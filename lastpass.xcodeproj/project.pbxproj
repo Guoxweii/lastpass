@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5E10332B1A374F4FB4E27D16 /* libPods-lastpassTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A9B3C7BD914224A9F7B900 /* libPods-lastpassTests.a */; };
 		B14181A83D77433C8B94DCC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF16EB5AE6CB4433970419AA /* libPods.a */; };
+		BC2BC04219372834002F76C8 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC04119372834002F76C8 /* search@2x.png */; };
 		BC64DE39193570DE00CA315B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE38193570DE00CA315B /* Foundation.framework */; };
 		BC64DE3B193570DE00CA315B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3A193570DE00CA315B /* CoreGraphics.framework */; };
 		BC64DE3D193570DE00CA315B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3C193570DE00CA315B /* UIKit.framework */; };
@@ -52,6 +53,7 @@
 		0B0838B9DF454DE98065E719 /* Pods-lastpassTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lastpassTests.xcconfig"; path = "Pods/Pods-lastpassTests.xcconfig"; sourceTree = "<group>"; };
 		27A9B3C7BD914224A9F7B900 /* libPods-lastpassTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lastpassTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5C214FC8EE4D309D903236 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		BC2BC04119372834002F76C8 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
 		BC64DE35193570DE00CA315B /* lastpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lastpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC64DE38193570DE00CA315B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC64DE3A193570DE00CA315B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -217,6 +219,7 @@
 		BC64DE7D1935DA7B00CA315B /* resources */ = {
 			isa = PBXGroup;
 			children = (
+				BC2BC04119372834002F76C8 /* search@2x.png */,
 				BC64DE9D193654F600CA315B /* bg@2x.png */,
 				BC64DE7E1935DD5800CA315B /* lastpass.png */,
 			);
@@ -343,6 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC2BC04219372834002F76C8 /* search@2x.png in Resources */,
 				BC64DE9C19364DB000CA315B /* baseCell.xib in Resources */,
 				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
 				BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */,

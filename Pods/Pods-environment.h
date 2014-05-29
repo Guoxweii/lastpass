@@ -6,6 +6,12 @@
 // project.
 
 
+// APPinViewController
+#define COCOAPODS_POD_AVAILABLE_APPinViewController
+#define COCOAPODS_VERSION_MAJOR_APPinViewController 1
+#define COCOAPODS_VERSION_MINOR_APPinViewController 0
+#define COCOAPODS_VERSION_PATCH_APPinViewController 2
+
 // JSONKit
 #define COCOAPODS_POD_AVAILABLE_JSONKit
 // This library does not follow semantic-versioning,

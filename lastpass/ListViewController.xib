@@ -7,6 +7,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ListViewController">
             <connections>
                 <outlet property="resetButton" destination="ihp-Wr-1yK" id="uYL-0X-Pec"/>
+                <outlet property="searchButton" destination="LPp-0W-K0v" id="Wub-ei-iPb"/>
+                <outlet property="searchDisplayController" destination="JWA-8m-DgN" id="NwN-Qi-bi0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -33,5 +35,26 @@
                 <action selector="reset:" destination="-1" eventType="touchDown" id="94j-Qh-XpC"/>
             </connections>
         </button>
+        <searchDisplayController id="JWA-8m-DgN">
+            <connections>
+                <outlet property="delegate" destination="-1" id="1ut-Sm-zui"/>
+                <outlet property="searchContentsController" destination="-1" id="SVh-pC-PYM"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="dbw-2A-epD"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="F7b-0n-NbR"/>
+            </connections>
+        </searchDisplayController>
+        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LPp-0W-K0v">
+            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+            <state key="normal" title="Button" image="search.png">
+                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+            </state>
+            <connections>
+                <action selector="search:" destination="-1" eventType="touchDown" id="Gku-s8-9EQ"/>
+            </connections>
+        </button>
     </objects>
+    <resources>
+        <image name="search.png" width="64" height="64"/>
+    </resources>
 </document>

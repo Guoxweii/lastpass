@@ -34,6 +34,7 @@
     [self.tableView registerNib:[UINib nibWithNibName:@"baseCell" bundle:nil] forCellReuseIdentifier:baseName];
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_resetButton];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_searchButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -147,6 +148,10 @@
                                                    otherButtonTitles:nil,nil];
     resetSheet.actionSheetStyle = UIActionSheetStyleDefault;
     [resetSheet showInView:self.view];
+}
+
+- (IBAction)search:(UIButton *)sender {
+    NSLog(@"search");
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
