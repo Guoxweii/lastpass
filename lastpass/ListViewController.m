@@ -13,6 +13,7 @@
 #import "DetailViewController.h"
 #import "AppDelegate.h"
 #import "AppInfo.h"
+#import "MainViewController.h"
 
 @interface ListViewController ()<UIActionSheetDelegate>
 
@@ -162,8 +163,7 @@
 
 - (void)resetList {
     [[AppInfo instance] store_password_info:nil];
-    
-    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [delegate autoRedirect];
+    MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    [self.navigationController setViewControllers:@[mainCtr]];
 }
 @end

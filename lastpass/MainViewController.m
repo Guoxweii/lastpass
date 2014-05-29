@@ -7,9 +7,11 @@
 //
 
 #import "MainViewController.h"
+#import "ListViewController.h"
 #import "MBProgressHUD.h"
 #import "Grubby.h"
 #import "AppDelegate.h"
+#import "AppInfo.h"
 
 @interface MainViewController ()<UITextFieldDelegate> {
 	BOOL loading;
@@ -34,10 +36,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.title = @"数据导入";
     
-    [self.urlField becomeFirstResponder];
-    loading = NO;
-    HUD = nil;
+    if ([[AppInfo instance] current_password_info]) {
+        [self redirectToList];
+    } else {
+        [self.urlField becomeFirstResponder];
+        loading = NO;
+        HUD = nil;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -104,7 +112,12 @@
         loading = NO;
     });
     
-	AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    [delegate redirect_to_list];
+	[self redirectToList];
+}
+
+- (void)redirectToList {
+	[[Grubby instance] parse:[[AppInfo instance] current_password_info]];
+    ListViewController *listCtr = [[ListViewController alloc] initWithNibName:@"ListViewController" bundle:nil];
+    [self.navigationController setViewControllers:@[listCtr]];
 }
 @end

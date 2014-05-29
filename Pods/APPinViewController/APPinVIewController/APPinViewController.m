@@ -47,14 +47,14 @@
 }
 
 - (void)commonInit {
-    _enterYourPinString = NSLocalizedString(@"Enter the pin", nil);
-    _createYourPinString = NSLocalizedString(@"Create your pin", nil);
-    _enterOnceAgainString = NSLocalizedString(@"Enter the pin once again", nil);
+    _enterYourPinString = NSLocalizedString(@"输入密码", nil);
+    _createYourPinString = NSLocalizedString(@"创建密码", nil);
+    _enterOnceAgainString = NSLocalizedString(@"再次输入密码", nil);
     
-    _pinsDontMatchTryOnceAgainString = NSLocalizedString(@"Pins don't match. Try again", nil);
+    _pinsDontMatchTryOnceAgainString = NSLocalizedString(@"密码错误", nil);
     
-    _pinCreatedString = NSLocalizedString(@"Pin Created", nil);
-    _pinVerifiedString = NSLocalizedString(@"Pin Verified", nil);
+    _pinCreatedString = NSLocalizedString(@"密码创建成功", nil);
+    _pinVerifiedString = NSLocalizedString(@"密码验证成功", nil);
 }
 
 - (void)viewDidLoad {
@@ -63,10 +63,14 @@
 
     NSAssert(self.pinCodeView != nil, @"APPinCodeView is not initialized");
     [self setupDefaultMessage];
+    
+    self.title = @"PIN";
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
+    self.message.text = _isCreated ? @"输入密码" : @"创建密码";
     
     //Strange bug in iOS7. Keyboard do not shown after call directly
     double delayInSeconds = .0;
@@ -219,31 +223,39 @@
 - (void)showCreateThePinMessage {
     NSString *message = self.createYourPinString;
     NSLog(@"%@", message);
+    [_message setText:@"创建密码"];
 }
 
 - (void)showEnterYourPinMessage {
     NSString *message = self.enterYourPinString;
     NSLog(@"%@", message);
+    [_message setText:@"输入密码"];
 }
 
 - (void)showPinsDontMatchMessage {
     NSString *message = self.pinsDontMatchTryOnceAgainString;
     NSLog(@"%@", message);
+    [_message setText:@"密码不一致"];
 }
 
 - (void)showPinCreatedMessage {
     NSString *message = self.pinCreatedString;
     NSLog(@"%@", message);
+    [_message setText:@"密码创建成功"];
 }
 
 - (void)showEnterOnceAgainMessage {
     NSString *message = self.enterOnceAgainString;
     NSLog(@"%@", message);
+    
+    [_message setText:@"请再次输入密码"];
 }
 
 - (void)showPinVerifiedMessage {
     NSString *message = self.pinVerifiedString;
     NSLog(@"%@", message);
+    
+    [_message setText:@"密码验证成功"];
 }
 
 @end

@@ -28,4 +28,22 @@ static AppInfo* AppInfoInstance = nil;
 	[[NSUserDefaults standardUserDefaults] setValue:info forKey:@"password_info"];
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
+- (NSString *)current_pin {
+	return [[NSUserDefaults standardUserDefaults] stringForKey:@"pin"];
+}
+
+- (void)store_pin:(NSString *)pin {
+	[[NSUserDefaults standardUserDefaults] setValue:pin forKey:@"pin"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+- (NSString *)current_valid {
+    return [[NSUserDefaults standardUserDefaults] stringForKey:@"valid"];
+}
+
+- (void)store_valid:(NSString *)valid {
+	[[NSUserDefaults standardUserDefaults] setValue:valid forKey:@"valid"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 @end

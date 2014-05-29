@@ -13,4 +13,10 @@
 
 - (NSString *)current_password_info;
 - (void)store_password_info:(NSString *)info;
+
+- (NSString *)current_valid;
+- (void)store_valid:(NSString *)valid;
+
+- (NSString *)current_pin;
+- (void)store_pin:(NSString *)pin;
 @end

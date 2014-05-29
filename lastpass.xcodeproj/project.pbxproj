@@ -10,6 +10,8 @@
 		5E10332B1A374F4FB4E27D16 /* libPods-lastpassTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27A9B3C7BD914224A9F7B900 /* libPods-lastpassTests.a */; };
 		B14181A83D77433C8B94DCC5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EF16EB5AE6CB4433970419AA /* libPods.a */; };
 		BC2BC04219372834002F76C8 /* search@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC04119372834002F76C8 /* search@2x.png */; };
+		BC2BC04919375067002F76C8 /* pinController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC04719375067002F76C8 /* pinController.m */; };
+		BC2BC04A19375067002F76C8 /* pinController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC04819375067002F76C8 /* pinController.xib */; };
 		BC64DE39193570DE00CA315B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE38193570DE00CA315B /* Foundation.framework */; };
 		BC64DE3B193570DE00CA315B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3A193570DE00CA315B /* CoreGraphics.framework */; };
 		BC64DE3D193570DE00CA315B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3C193570DE00CA315B /* UIKit.framework */; };
@@ -54,6 +56,9 @@
 		27A9B3C7BD914224A9F7B900 /* libPods-lastpassTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-lastpassTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA5C214FC8EE4D309D903236 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		BC2BC04119372834002F76C8 /* search@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "search@2x.png"; sourceTree = "<group>"; };
+		BC2BC04619375067002F76C8 /* pinController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinController.h; sourceTree = "<group>"; };
+		BC2BC04719375067002F76C8 /* pinController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pinController.m; sourceTree = "<group>"; };
+		BC2BC04819375067002F76C8 /* pinController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = pinController.xib; sourceTree = "<group>"; };
 		BC64DE35193570DE00CA315B /* lastpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lastpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC64DE38193570DE00CA315B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC64DE3A193570DE00CA315B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -212,6 +217,9 @@
 				BC64DE9F1936BFA700CA315B /* DetailViewController.h */,
 				BC64DEA01936BFA700CA315B /* DetailViewController.m */,
 				BC64DEA11936BFA700CA315B /* DetailViewController.xib */,
+				BC2BC04619375067002F76C8 /* pinController.h */,
+				BC2BC04719375067002F76C8 /* pinController.m */,
+				BC2BC04819375067002F76C8 /* pinController.xib */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -351,6 +359,7 @@
 				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
 				BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */,
 				BC64DEA31936BFA700CA315B /* DetailViewController.xib in Resources */,
+				BC2BC04A19375067002F76C8 /* pinController.xib in Resources */,
 				BC64DE9E193654F600CA315B /* bg@2x.png in Resources */,
 				BC64DE961936437900CA315B /* ListViewController.xib in Resources */,
 				BC64DE7F1935DD5800CA315B /* lastpass.png in Resources */,
@@ -438,6 +447,7 @@
 			files = (
 				BC64DE9B19364DB000CA315B /* baseCell.m in Sources */,
 				BC64DE89193602B100CA315B /* AppInfo.m in Sources */,
+				BC2BC04919375067002F76C8 /* pinController.m in Sources */,
 				BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */,
 				BC64DEA21936BFA700CA315B /* DetailViewController.m in Sources */,
 				BC64DE951936437900CA315B /* ListViewController.m in Sources */,
