@@ -11,6 +11,8 @@
 #import "baseCell.h"
 #import "UIImageView+WebCache.h"
 #import "DetailViewController.h"
+#import "AppDelegate.h"
+#import "AppInfo.h"
 
 @interface ListViewController ()
 
@@ -30,6 +32,8 @@
     self.title = @"密码列表";
     static NSString *baseName = @"baseCell";
     [self.tableView registerNib:[UINib nibWithNibName:@"baseCell" bundle:nil] forCellReuseIdentifier:baseName];
+    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_resetButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -137,4 +141,10 @@
     [self.navigationController pushViewController:detailView animated:YES];
 }
 
+- (IBAction)reset:(id)sender {
+    [[AppInfo instance] store_password_info:nil];
+    
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [delegate autoRedirect];
+}
 @end

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ListViewController : UITableViewController
+@property (strong, nonatomic) IBOutlet UIButton *resetButton;
 
+- (IBAction)reset:(id)sender;
 @end

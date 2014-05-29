@@ -51,14 +51,16 @@
     if (loading) { return YES; }
     loading = YES;
     
-    HUD = [[MBProgressHUD alloc] initWithView:self.view];
-    [self.view addSubview:HUD];
-    HUD.dimBackground = YES;
-    HUD.labelText = @"loading..";
-    [HUD show:YES];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        HUD = [[MBProgressHUD alloc] initWithView:self.view];
+        [self.view addSubview:HUD];
+        HUD.dimBackground = YES;
+        HUD.labelText = @"loading..";
+        [HUD show:YES];
+    });
     
     [[Grubby instance] setMainCtr:self];
-    [[Grubby instance] fetch_remote_html:_urlField.text];
+    [[Grubby instance] performSelector:@selector(fetch_remote_html:) withObject:_urlField.text afterDelay:1.0f];
     
     return YES;
 }
