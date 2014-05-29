@@ -9,8 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface DetailViewController : UIViewController
-@property (strong, nonatomic) IBOutlet UILabel *login;
-@property (strong, nonatomic) IBOutlet UILabel *password;
+@property (strong, nonatomic) IBOutlet UITextField *login;
+@property (strong, nonatomic) IBOutlet UITextField *password;
 @property (strong, nonatomic) NSString *loginValue;
 @property (strong, nonatomic) NSString *passwordValue;
+@property (strong, nonatomic) IBOutlet UIButton *passwordCopyButton;
+@property (strong, nonatomic) IBOutlet UIButton *loginCopyButton;
+
+- (IBAction)loginCopy:(UIButton *)sender;
+- (IBAction)passwordCopy:(UIButton *)sender;
 @end

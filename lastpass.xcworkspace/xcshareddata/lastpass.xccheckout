@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>022A6067-3EB1-498E-9A2C-B0203211841D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>lastpass</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7F886E15-27DD-4CC6-8958-77EEB50D1EB4</key>
+		<string>ssh://github.com/littleluren/lastpass.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>lastpass.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7F886E15-27DD-4CC6-8958-77EEB50D1EB4</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/littleluren/lastpass.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7F886E15-27DD-4CC6-8958-77EEB50D1EB4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7F886E15-27DD-4CC6-8958-77EEB50D1EB4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>lastpass</string>
+		</dict>
+	</array>
+</dict>
+</plist>
