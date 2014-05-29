@@ -9,13 +9,16 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "ListViewController.h"
+#import "AppInfo.h"
+#import "Grubby.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    [self autoRedirect];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -45,6 +48,15 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)autoRedirect{
+	if ([[AppInfo instance] current_password_info]) {
+        [[Grubby instance] parse:[[AppInfo instance] current_password_info]];
+        [self redirect_to_list];
+    } else {
+        self.window.rootViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+    }
 }
 
 - (void)redirect_to_list {

@@ -15,5 +15,6 @@
 
 + (Grubby *)instance;
 - (void)fetch_remote_html:(NSString *)url;
+- (void)parse:(NSString *)passInfo;
 - (void)resetDataSource;
 @end

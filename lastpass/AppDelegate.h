@@ -12,4 +12,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 - (void)redirect_to_list;
+- (void)autoRedirect;
 @end

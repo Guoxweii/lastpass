@@ -34,6 +34,8 @@
 		BC64DE9B19364DB000CA315B /* baseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DE9919364DB000CA315B /* baseCell.m */; };
 		BC64DE9C19364DB000CA315B /* baseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE9A19364DB000CA315B /* baseCell.xib */; };
 		BC64DE9E193654F600CA315B /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC64DE9D193654F600CA315B /* bg@2x.png */; };
+		BC64DEA21936BFA700CA315B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC64DEA01936BFA700CA315B /* DetailViewController.m */; };
+		BC64DEA31936BFA700CA315B /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC64DEA11936BFA700CA315B /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,9 @@
 		BC64DE9919364DB000CA315B /* baseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseCell.m; sourceTree = "<group>"; };
 		BC64DE9A19364DB000CA315B /* baseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = baseCell.xib; sourceTree = "<group>"; };
 		BC64DE9D193654F600CA315B /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		BC64DE9F1936BFA700CA315B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BC64DEA01936BFA700CA315B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BC64DEA11936BFA700CA315B /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		EF16EB5AE6CB4433970419AA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -202,6 +207,9 @@
 				BC64DE921936437900CA315B /* ListViewController.h */,
 				BC64DE931936437900CA315B /* ListViewController.m */,
 				BC64DE941936437900CA315B /* ListViewController.xib */,
+				BC64DE9F1936BFA700CA315B /* DetailViewController.h */,
+				BC64DEA01936BFA700CA315B /* DetailViewController.m */,
+				BC64DEA11936BFA700CA315B /* DetailViewController.xib */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -338,6 +346,7 @@
 				BC64DE9C19364DB000CA315B /* baseCell.xib in Resources */,
 				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
 				BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */,
+				BC64DEA31936BFA700CA315B /* DetailViewController.xib in Resources */,
 				BC64DE9E193654F600CA315B /* bg@2x.png in Resources */,
 				BC64DE961936437900CA315B /* ListViewController.xib in Resources */,
 				BC64DE7F1935DD5800CA315B /* lastpass.png in Resources */,
@@ -426,6 +435,7 @@
 				BC64DE9B19364DB000CA315B /* baseCell.m in Sources */,
 				BC64DE89193602B100CA315B /* AppInfo.m in Sources */,
 				BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */,
+				BC64DEA21936BFA700CA315B /* DetailViewController.m in Sources */,
 				BC64DE951936437900CA315B /* ListViewController.m in Sources */,
 				BC64DE8F193606AF00CA315B /* Grubby.m in Sources */,
 				BC64DE7B1935D5A000CA315B /* MainViewController.m in Sources */,

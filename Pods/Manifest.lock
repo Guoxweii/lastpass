@@ -12,6 +12,9 @@ PODS:
     - Kiwi/ARC
     - Kiwi/NonARC
   - MBProgressHUD (0.8)
+  - SDWebImage (3.6):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.6)
 
 DEPENDENCIES:
   - hpple (~> 0.2.0)
@@ -19,11 +22,13 @@ DEPENDENCIES:
   - Kiwi (~> 2.2.4)
   - Kiwi/XCTest
   - MBProgressHUD (~> 0.8)
+  - SDWebImage (~> 3.6)
 
 SPEC CHECKSUMS:
   hpple: f4eb7c21a8db83ec264e5d614ec7509e10e5adec
   JSONKit: efef3bbd3372ff33f96b9c6f34cf4fe18e74ab69
   Kiwi: c73667f2b84cbf36f1a3830267c5a4ae8dcbd8ba
   MBProgressHUD: c356980b0cd097f19acec959b49dca5eb8ec31be
+  SDWebImage: c6989652c1cdf27cbdf3f56957e2030f825af5bc
 
 COCOAPODS: 0.33.1

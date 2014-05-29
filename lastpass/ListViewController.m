@@ -9,6 +9,8 @@
 #import "ListViewController.h"
 #import "Grubby.h"
 #import "baseCell.h"
+#import "UIImageView+WebCache.h"
+#import "DetailViewController.h"
 
 @interface ListViewController ()
 
@@ -61,6 +63,21 @@
     NSString *key = [[[[Grubby instance] dataSource] allKeys] objectAtIndex:indexPath.section];
 	[cell.name setText:[[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:indexPath.row] objectAtIndex:3]];
     
+    NSString *url = [[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:indexPath.row] objectAtIndex:0];
+    NSURL *passwordUrl = [NSURL URLWithString:url];
+
+    NSString *logoUrl;
+    if ([passwordUrl port]) {
+		logoUrl = [NSString stringWithFormat:@"%@://%@:%@/favicon.ico",[passwordUrl scheme],[passwordUrl host],[passwordUrl port]];
+    } else {
+    	logoUrl = [NSString stringWithFormat:@"%@://%@/favicon.ico",[passwordUrl scheme],[passwordUrl host]];
+    }
+    
+    NSLog(@"the image url is %@", logoUrl);
+    
+    [cell.logo setImageWithURL:[NSURL URLWithString:logoUrl]
+                placeholderImage:[UIImage imageNamed:@"bg"]];
+    
     return cell;
 }
 
@@ -105,21 +122,19 @@
 }
 */
 
-/*
+
 #pragma mark - Table view delegate
 
 // In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    NSString *key = [[[[Grubby instance] dataSource] allKeys] objectAtIndex:indexPath.section];
+    [detailView setTitle:[[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:indexPath.row] objectAtIndex:3]];
+    [detailView setLoginValue:[[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:indexPath.row] objectAtIndex:1]];
+    [detailView setPasswordValue:[[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:indexPath.row] objectAtIndex:2]];
+
+    [self.navigationController pushViewController:detailView animated:YES];
 }
-*/
 
 @end

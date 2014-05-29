@@ -62,7 +62,7 @@ static Grubby* grubbyInstance = nil;
         
         if ([datalineArray count] < 7) { continue; }
         
-        if ([datalineArray objectAtIndex:5]) {
+        if ([datalineArray objectAtIndex:5] && ![[datalineArray objectAtIndex:5] isEqualToString:@""]) {
             if (![_dataSource objectForKey:[datalineArray objectAtIndex:5]]) {
                 NSMutableArray *categoryArray = [[NSMutableArray alloc] init];
                 [_dataSource setObject:categoryArray forKey:[datalineArray objectAtIndex:5]];
