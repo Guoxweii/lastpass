@@ -26,7 +26,7 @@
 @interface APPinViewController : UIViewController <APPinViewDelegate>
 @property (weak, nonatomic) IBOutlet APPinView *pinCodeView;
 @property (strong, nonatomic) IBOutlet UILabel *message;
-@property (assign, nonatomic) BOOL isCreated;
+@property (assign, nonatomic) NSString *pinState;
 
 //You can set it on order to compare entered pin code with this var.
 @property (nonatomic, strong) NSString *pinCodeToCheck;

@@ -40,7 +40,7 @@
 - (void)createPin {
     APPinViewController *pinCtr = [[APPinViewController alloc] initWithNibName:@"APPinViewController" bundle:nil];
     pinCtr.delegate = self;
-    [pinCtr setIsCreated:NO];
+    [pinCtr setPinState:@"new"];
 	_baseNaviCtr = [[UINavigationController alloc] initWithRootViewController:pinCtr];
     
     [self presentViewController:_baseNaviCtr animated:YES completion:nil];
@@ -49,8 +49,19 @@
 - (void)verityPin {
 	APPinViewController *pinCtr = [[APPinViewController alloc] initWithNibName:@"APPinViewController" bundle:nil];
     pinCtr.delegate = self;
-    [pinCtr setIsCreated:YES];
+    [pinCtr setPinState:@"verity"];
     pinCtr.pinCodeToCheck = [[AppInfo instance] current_pin];
+	_baseNaviCtr = [[UINavigationController alloc] initWithRootViewController:pinCtr];
+    
+    [self presentViewController:_baseNaviCtr animated:YES completion:nil];
+}
+
+- (void)changePin {
+	APPinViewController *pinCtr = [[APPinViewController alloc] initWithNibName:@"APPinViewController" bundle:nil];
+    pinCtr.delegate = self;
+    [pinCtr setPinState:@"reset"];
+    pinCtr.pinCodeToCheck = [[AppInfo instance] current_pin];
+    pinCtr.shouldResetPinCode = YES;
 	_baseNaviCtr = [[UINavigationController alloc] initWithRootViewController:pinCtr];
     
     [self presentViewController:_baseNaviCtr animated:YES completion:nil];
@@ -78,6 +89,7 @@
 - (void)pinCodeViewController:(APPinViewController *)controller didChangePinCode:(NSString *)pinCode {
 	[[AppInfo instance] store_pin:pinCode];
     [[AppInfo instance] store_valid:@"valid"];
+    [self setIsEdit:NO];
 	[_baseNaviCtr dismissViewControllerAnimated:YES completion:^{
         [self hidePinView];
     }];
@@ -90,10 +102,12 @@
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
     
-    if ([[[AppInfo instance] current_valid] isEqualToString:@"valid"]) { return; }
+    if ([[[AppInfo instance] current_valid] isEqualToString:@"valid"] && !_isEdit) { return; }
     
-    if([[AppInfo instance] current_pin]) {
+    if([[AppInfo instance] current_pin] && [[[AppInfo instance] current_valid] isEqualToString:@"unvalid"]) {
         [self verityPin];
+    } else if ([[AppInfo instance] current_pin] && [[[AppInfo instance] current_valid] isEqualToString:@"valid"]){
+    	[self changePin];
     } else {
         [self createPin];
     }

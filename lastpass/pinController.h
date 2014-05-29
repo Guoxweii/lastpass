@@ -11,7 +11,9 @@
 
 @interface pinController : UIViewController<APPinViewControllerDelegate>
 @property (retain, nonatomic) UINavigationController *baseNaviCtr;
+@property (assign, nonatomic) BOOL isEdit;
 
 - (void)createPin;
 - (void)verityPin;
+- (void)changePin;
 @end

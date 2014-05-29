@@ -70,7 +70,13 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    self.message.text = _isCreated ? @"输入密码" : @"创建密码";
+    if ([_pinState isEqualToString:@"new"]) {
+    	self.message.text = @"创建密码";
+    } else if([_pinState isEqualToString:@"verity"]) {
+    	self.message.text = @"输入密码";
+    } else {
+    	self.message.text = @"输入旧密码";
+    }
     
     //Strange bug in iOS7. Keyboard do not shown after call directly
     double delayInSeconds = .0;

@@ -8,6 +8,7 @@
 
 #import "DetailViewController.h"
 #import "MBProgressHUD.h"
+#import "pinController.h"
 
 @interface DetailViewController ()
 
@@ -40,6 +41,8 @@
     _loginCopyButton.layer.cornerRadius = 3.0f;
     _loginCopyButton.layer.borderWidth = 1.0f;
     _loginCopyButton.layer.borderColor = [UIColor blueColor].CGColor;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_resetPinButton];
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,5 +91,11 @@
     } completionBlock:^{
         [HUD removeFromSuperview];
     }];
+}
+
+- (IBAction)resetPin:(UIButton *)sender {
+    pinController *pinCtr = [[pinController alloc] initWithNibName:@"pinController" bundle:nil];
+    [pinCtr setIsEdit:YES];
+    [self presentViewController:pinCtr animated:YES completion:nil];
 }
 @end

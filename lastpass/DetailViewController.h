@@ -15,7 +15,9 @@
 @property (strong, nonatomic) NSString *passwordValue;
 @property (strong, nonatomic) IBOutlet UIButton *passwordCopyButton;
 @property (strong, nonatomic) IBOutlet UIButton *loginCopyButton;
+@property (strong, nonatomic) IBOutlet UIButton *resetPinButton;
 
 - (IBAction)loginCopy:(UIButton *)sender;
 - (IBAction)passwordCopy:(UIButton *)sender;
+- (IBAction)resetPin:(UIButton *)sender;
 @end
