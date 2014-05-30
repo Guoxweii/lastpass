@@ -35,7 +35,7 @@
             </connections>
         </button>
         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9lI-qf-K8C">
-            <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+            <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <state key="normal" title="Button" image="search.png">
                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
