@@ -14,9 +14,10 @@
 #import "AppDelegate.h"
 #import "AppInfo.h"
 #import "MainViewController.h"
+#import "SearchViewController.h"
 
 @interface ListViewController ()<UIActionSheetDelegate>
-
+@property (retain, nonatomic) SearchViewController *searchCtr;
 @end
 
 @implementation ListViewController
@@ -36,6 +37,9 @@
     
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_resetButton];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:_searchButton];
+    
+    _searchCtr = [[SearchViewController alloc] initWithNibName:@"SearchViewController" bundle:nil];
+    _searchCtr.listCtr = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -152,7 +156,7 @@
 }
 
 - (IBAction)search:(UIButton *)sender {
-    NSLog(@"search");
+    [self.navigationController.view addSubview:_searchCtr.view];
 }
 
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
@@ -165,5 +169,18 @@
     [[AppInfo instance] store_password_info:nil];
     MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     [self.navigationController setViewControllers:@[mainCtr]];
+}
+
+- (void)cacenSearch {
+	[_searchCtr.view removeFromSuperview];
+}
+
+- (void)pushWithkey:(NSString *)key andIndex:(NSInteger)index {
+	DetailViewController *detailView = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil];
+    [detailView setTitle:[[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:index] objectAtIndex:3]];
+    [detailView setLoginValue:[[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:index] objectAtIndex:1]];
+    [detailView setPasswordValue:[[[[[Grubby instance] dataSource] objectForKey:key] objectAtIndex:index] objectAtIndex:2]];
+    
+    [self.navigationController pushViewController:detailView animated:YES];
 }
 @end

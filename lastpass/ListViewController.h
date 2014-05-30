@@ -10,8 +10,10 @@
 
 @interface ListViewController : UITableViewController
 @property (strong, nonatomic) IBOutlet UIButton *resetButton;
-@property (strong, nonatomic) IBOutlet UIView *searchButton;
+@property (strong, nonatomic) IBOutlet UIButton *searchButton;
 
 - (IBAction)reset:(id)sender;
 - (IBAction)search:(UIButton *)sender;
+- (void)cacenSearch;
+- (void)pushWithkey:(NSString *)key andIndex:(NSInteger)index;
 @end
