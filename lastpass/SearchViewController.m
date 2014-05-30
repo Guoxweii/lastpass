@@ -8,6 +8,8 @@
 
 #import "SearchViewController.h"
 #import "Grubby.h"
+#import "UIImageView+WebCache.h"
+#import "baseCell.h"
 
 @interface SearchViewController (){
 	NSMutableArray *dataArray;
@@ -31,6 +33,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     dataArray = [[NSMutableArray alloc] init];
+    
+    static NSString *baseName = @"baseCell";
+    [self.searchDisplayController.searchResultsTableView registerNib:[UINib nibWithNibName:@"baseCell" bundle:nil] forCellReuseIdentifier:baseName];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,7 +56,7 @@
             NSArray *info = [groupData objectAtIndex:j];
             
             if ([self judgeString:[info objectAtIndex:0] containSubstring:searchText] || [self judgeString:[info objectAtIndex:3] containSubstring:searchText]) {
-                [dataArray addObject:@[key, [NSString stringWithFormat:@"%i",j], [info objectAtIndex:3]]];
+                [dataArray addObject:@[key, [NSString stringWithFormat:@"%i",j], [info objectAtIndex:3], [info objectAtIndex:0]]];
             }
         }
     }
@@ -80,8 +85,22 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"searchCell"];
-    cell.textLabel.text = [[dataArray objectAtIndex:indexPath.row] objectAtIndex:2];
+    static NSString *baseName = @"baseCell";
+    baseCell *cell = [tableView dequeueReusableCellWithIdentifier:baseName forIndexPath:indexPath];
+    
+    cell.name.text = [[dataArray objectAtIndex:indexPath.row] objectAtIndex:2];
+    
+    NSString *url = [[dataArray objectAtIndex:indexPath.row] objectAtIndex:3];
+    NSURL *passwordUrl = [NSURL URLWithString:url];
+    
+    NSString *logoUrl;
+    if ([passwordUrl port]) {
+		logoUrl = [NSString stringWithFormat:@"%@://%@:%@/favicon.ico",[passwordUrl scheme],[passwordUrl host],[passwordUrl port]];
+    } else {
+    	logoUrl = [NSString stringWithFormat:@"%@://%@/favicon.ico",[passwordUrl scheme],[passwordUrl host]];
+    }
+    
+    [cell.logo setImageWithURL:[NSURL URLWithString:logoUrl] placeholderImage:[UIImage imageNamed:@"bg"]];
     
     return cell;
 }
