@@ -47,6 +47,8 @@
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
 	[dataArray removeAllObjects];
     
+    NSString *searchTextWithoutSpace = [searchText stringByTrimmingCharactersInSet:
+                                       [NSCharacterSet whitespaceCharacterSet]];
     NSMutableDictionary *lastpassData = [[Grubby instance] dataSource];
     for (int i=0; i<[[lastpassData allKeys] count]; i++) {
         NSString *key = [[lastpassData allKeys] objectAtIndex:i];
@@ -55,7 +57,7 @@
         for (int j=0; j<[groupData count]; j++) {
             NSArray *info = [groupData objectAtIndex:j];
             
-            if ([self judgeString:[info objectAtIndex:0] containSubstring:searchText] || [self judgeString:[info objectAtIndex:3] containSubstring:searchText]) {
+            if ([self judgeString:[info objectAtIndex:0] containSubstring:searchTextWithoutSpace] || [self judgeString:[info objectAtIndex:3] containSubstring:searchTextWithoutSpace]) {
                 [dataArray addObject:@[key, [NSString stringWithFormat:@"%i",j], [info objectAtIndex:3], [info objectAtIndex:0]]];
             }
         }
@@ -108,6 +110,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	[_listCtr cacenSearch];
     [_listCtr pushWithkey:[[dataArray objectAtIndex:indexPath.row] objectAtIndex:0] andIndex:[[[dataArray objectAtIndex:indexPath.row] objectAtIndex:1] intValue]];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+	[super viewDidAppear:animated];
 }
 
 @end

@@ -95,4 +95,5 @@
                          [self.webView stringByEvaluatingJavaScriptFromString:@"$('.nowrap').click()"];
                      }];
 }
+
 @end
