@@ -58,8 +58,8 @@
 }
 
 - (BOOL)judgeString:(NSString *)mainString containSubstring:(NSString *)substring {
-    NSString *mainUpString = [mainString uppercaseStringWithLocale:NSLocaleCurrencyCode];
-    NSString *subUpString = [substring uppercaseStringWithLocale:NSLocaleCurrencyCode];
+    NSString *mainUpString = [mainString uppercaseString];
+    NSString *subUpString = [substring uppercaseString];
     return [mainUpString rangeOfString:subUpString].location == NSNotFound ? FALSE : YES;
 }
 
