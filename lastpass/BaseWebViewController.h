@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseWebViewController : UIViewController
+@interface BaseWebViewController : UIViewController<UIWebViewDelegate>
 @property (strong, nonatomic) IBOutlet UIWebView *webView;
+@property (strong, nonatomic) IBOutlet UIButton *loginButton;
+@property (strong, nonatomic) IBOutlet UIView *popView;
+@property (strong, nonatomic) IBOutlet UITextField *password;
+@property (strong, nonatomic) IBOutlet UITextField *login;
 
+- (IBAction)submit:(UIButton *)sender;
 @end
