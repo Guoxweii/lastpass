@@ -12,6 +12,7 @@
 #import "Grubby.h"
 #import "AppDelegate.h"
 #import "AppInfo.h"
+#import "BaseWebViewController.h"
 
 @interface MainViewController ()<UITextFieldDelegate> {
 	BOOL loading;
@@ -115,6 +116,11 @@
     });
     
 	[self redirectToList];
+}
+
+- (IBAction)loadWebView:(UIButton *)sender {
+    BaseWebViewController *webView = [[BaseWebViewController alloc] initWithNibName:@"BaseWebViewController" bundle:nil];
+    [self.navigationController pushViewController:webView animated:YES];
 }
 
 - (void)redirectToList {
