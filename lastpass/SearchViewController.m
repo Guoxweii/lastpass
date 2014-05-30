@@ -58,7 +58,9 @@
 }
 
 - (BOOL)judgeString:(NSString *)mainString containSubstring:(NSString *)substring {
-    return [mainString rangeOfString:substring].location == NSNotFound ? FALSE : YES;
+    NSString *mainUpString = [mainString uppercaseStringWithLocale:NSLocaleCurrencyCode];
+    NSString *subUpString = [substring uppercaseStringWithLocale:NSLocaleCurrencyCode];
+    return [mainUpString rangeOfString:subUpString].location == NSNotFound ? FALSE : YES;
 }
 
 - (void)searchBarCancelButtonClicked:(UISearchBar *) searchBar {
