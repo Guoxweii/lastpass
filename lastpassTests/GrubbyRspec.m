@@ -57,6 +57,26 @@ describe(@"Grubby", ^{
             });
         });
     });
+    
+    context(@"parse string", ^{
+    	NSString *passInfo = @"url,username,password,extra,name,grouping,fav\nhttps://58.196.13.4,gxw,123asdfasdf456,,58.196.13.4,bStar,0\nhttps://accounts.google.com,alphaguoxiongwei＠gmail.com,123456,,google账户,个人,0\nhttp://mail.b-star.cn,xwguo@b-star.cn,IUgasdfasdf,,公司办公邮箱,bStar,0\nhttps://github.com,alphaguoxiongwei@gmail.com,tasdfasdftVGr8C,,github账户,个人,0\nhttp://tieba.baidu.com,littleluren,viRIZsdfa1Su2,,百度账户,个人,0";
+        
+        beforeEach(^{ [[Grubby instance] parse:passInfo]; });
+        
+        afterEach(^{ [[Grubby instance] resetDataSource]; });
+        
+        it(@"should datasource not empty", ^{
+        	[[[Grubby instance].dataSource shouldNot] beEmpty];
+        });
+        
+        it(@"should datasource have 2 keys", ^{
+        	[[[[[Grubby instance].dataSource allKeys] should] have:2] items];
+        });
+        
+        it(@"should datasource bStar have 2 items", ^{
+        	[[[[[Grubby instance].dataSource objectForKey:@"bStar"] should] have:2] items];
+        });
+    });
 });
 
 SPEC_END
