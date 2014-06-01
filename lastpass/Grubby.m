@@ -46,7 +46,7 @@ static Grubby* grubbyInstance = nil;
 }
 
 - (void)showErrorWithInvalidUrl {
-	[_mainCtr showErrorWithInvalidUrl];
+	[self.mainCtr showErrorWithInvalidUrl];
 }
 
 - (void)parse:(NSString *)passInfo {

@@ -13,4 +13,5 @@
 
 - (void)showErrorWithInvalidUrl;
 - (void)fetchResultSuccess;
+- (IBAction)loadWebView:(UIButton *)sender;
 @end

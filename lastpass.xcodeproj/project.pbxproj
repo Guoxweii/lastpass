@@ -14,6 +14,9 @@
 		BC2BC04A19375067002F76C8 /* pinController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC04819375067002F76C8 /* pinController.xib */; };
 		BC2BC05419381D55002F76C8 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC05219381D55002F76C8 /* SearchViewController.m */; };
 		BC2BC05519381D55002F76C8 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC05319381D55002F76C8 /* SearchViewController.xib */; };
+		BC2BC05919385C83002F76C8 /* BaseWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC05719385C83002F76C8 /* BaseWebViewController.m */; };
+		BC2BC05A19385C83002F76C8 /* BaseWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC2BC05819385C83002F76C8 /* BaseWebViewController.xib */; };
+		BC2BC05C193AACC4002F76C8 /* SearchViewControllerRspec.m in Sources */ = {isa = PBXBuildFile; fileRef = BC2BC05B193AACC4002F76C8 /* SearchViewControllerRspec.m */; };
 		BC64DE39193570DE00CA315B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE38193570DE00CA315B /* Foundation.framework */; };
 		BC64DE3B193570DE00CA315B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3A193570DE00CA315B /* CoreGraphics.framework */; };
 		BC64DE3D193570DE00CA315B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC64DE3C193570DE00CA315B /* UIKit.framework */; };
@@ -64,6 +67,10 @@
 		BC2BC05119381D55002F76C8 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		BC2BC05219381D55002F76C8 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		BC2BC05319381D55002F76C8 /* SearchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		BC2BC05619385C83002F76C8 /* BaseWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebViewController.h; sourceTree = "<group>"; };
+		BC2BC05719385C83002F76C8 /* BaseWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebViewController.m; sourceTree = "<group>"; };
+		BC2BC05819385C83002F76C8 /* BaseWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseWebViewController.xib; sourceTree = "<group>"; };
+		BC2BC05B193AACC4002F76C8 /* SearchViewControllerRspec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewControllerRspec.m; sourceTree = "<group>"; };
 		BC64DE35193570DE00CA315B /* lastpass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lastpass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC64DE38193570DE00CA315B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BC64DE3A193570DE00CA315B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -228,6 +235,9 @@
 				BC2BC05119381D55002F76C8 /* SearchViewController.h */,
 				BC2BC05219381D55002F76C8 /* SearchViewController.m */,
 				BC2BC05319381D55002F76C8 /* SearchViewController.xib */,
+				BC2BC05619385C83002F76C8 /* BaseWebViewController.h */,
+				BC2BC05719385C83002F76C8 /* BaseWebViewController.m */,
+				BC2BC05819385C83002F76C8 /* BaseWebViewController.xib */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -246,6 +256,7 @@
 			isa = PBXGroup;
 			children = (
 				BC64DE811935F9D600CA315B /* MainViewController.m */,
+				BC2BC05B193AACC4002F76C8 /* SearchViewControllerRspec.m */,
 			);
 			name = controllers;
 			sourceTree = "<group>";
@@ -364,6 +375,7 @@
 			files = (
 				BC2BC04219372834002F76C8 /* search@2x.png in Resources */,
 				BC64DE9C19364DB000CA315B /* baseCell.xib in Resources */,
+				BC2BC05A19385C83002F76C8 /* BaseWebViewController.xib in Resources */,
 				BC64DE43193570DE00CA315B /* InfoPlist.strings in Resources */,
 				BC64DE7C1935D5A000CA315B /* MainViewController.xib in Resources */,
 				BC64DEA31936BFA700CA315B /* DetailViewController.xib in Resources */,
@@ -461,6 +473,7 @@
 				BC64DE49193570DE00CA315B /* AppDelegate.m in Sources */,
 				BC64DEA21936BFA700CA315B /* DetailViewController.m in Sources */,
 				BC64DE951936437900CA315B /* ListViewController.m in Sources */,
+				BC2BC05919385C83002F76C8 /* BaseWebViewController.m in Sources */,
 				BC64DE8F193606AF00CA315B /* Grubby.m in Sources */,
 				BC64DE7B1935D5A000CA315B /* MainViewController.m in Sources */,
 				BC64DE45193570DE00CA315B /* main.m in Sources */,
@@ -472,6 +485,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC64DE911936077200CA315B /* GrubbyRspec.m in Sources */,
+				BC2BC05C193AACC4002F76C8 /* SearchViewControllerRspec.m in Sources */,
 				BC64DE8C193603EA00CA315B /* AppInfoRspec.m in Sources */,
 				BC64DE5E193570DE00CA315B /* lastpassTests.m in Sources */,
 				BC64DE821935F9D600CA315B /* MainViewController.m in Sources */,

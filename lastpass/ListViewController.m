@@ -166,7 +166,8 @@
 }
 
 - (void)resetList {
-    [[AppInfo instance] store_password_info:nil];
+	[[Grubby instance] resetDataSource];
+    
     MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
     [self.navigationController setViewControllers:@[mainCtr]];
 }

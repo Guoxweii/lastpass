@@ -5,11 +5,11 @@ SPEC_BEGIN(simpleStringRspec)
 
 describe(@"MainViewController", ^{
 	context(@"view", ^{
-		MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+//		MainViewController *mainCtr = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
         
-        it(@"have url textfield", ^{
-        	[[[mainCtr.view.subviews should] have:1] urlField];
-        });
+//        it(@"have url textfield", ^{
+//        	[[[mainCtr.view.subviews should] have:3] urlField];
+//        });
     });
 });
 
