@@ -38,11 +38,30 @@ describe(@"SearchViewController", ^{
         
         context(@"with search:google", ^{
         	let(searchText, ^{ return @" gOOgle "; });
-            beforeEach(^{ [searchCtr searchBar:nil textDidChange:@" GooGLE "]; });
+            beforeEach(^{ [searchCtr searchBar:nil textDidChange:searchText]; });
 
             it(@"should return success value", ^{
                 NSInteger number = [[searchCtr result] count];
                 [[theValue(number) should] equal:theValue(1)];
+            });
+        });
+        
+        context(@"with search:google", ^{
+        	let(searchText, ^{ return @" gitHub "; });
+            beforeEach(^{ [searchCtr searchBar:nil textDidChange:searchText]; });
+            
+            it(@"should return success value", ^{
+                NSInteger number = [[searchCtr result] count];
+                [[theValue(number) should] equal:theValue(1)];
+            });
+        });
+        
+        context(@"with search:google", ^{
+        	let(searchText, ^{ return @" unVlidSearch "; });
+            beforeEach(^{ [searchCtr searchBar:nil textDidChange:searchText]; });
+            
+            it(@"should return success value", ^{
+                [[[searchCtr result] should] beEmpty];
             });
         });
     });
