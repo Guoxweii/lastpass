@@ -10,4 +10,7 @@
 #import "ListViewController.h"
 @interface SearchViewController : UIViewController<UISearchBarDelegate,UISearchDisplayDelegate>
 @property (retain,nonatomic) ListViewController *listCtr;
+
+- (BOOL)judgeString:(NSString *)mainString containSubstring:(NSString *)substring;
+- (NSMutableArray *)result;
 @end

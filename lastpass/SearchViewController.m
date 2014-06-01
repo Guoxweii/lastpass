@@ -116,4 +116,8 @@
 	[super viewDidAppear:animated];
 }
 
+- (NSMutableArray *)result {
+	return dataArray;
+}
+
 @end
