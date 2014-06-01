@@ -12,13 +12,13 @@ build/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
+lastpass.xcworkspace/xcuserdata
 *.xccheckout
 profile
 *.moved-aside
 DerivedData
 *.hmap
 *.ipa
-lastpass.xcworkspace/xcuserdata/gxw.xcuserdatad/UserInterfaceState.xcuserstate
 
 # CocoaPods
 Pods
