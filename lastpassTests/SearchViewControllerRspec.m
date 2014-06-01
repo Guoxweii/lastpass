@@ -46,7 +46,7 @@ describe(@"SearchViewController", ^{
             });
         });
         
-        context(@"with search:google", ^{
+        context(@"with search:github", ^{
         	let(searchText, ^{ return @" gitHub "; });
             beforeEach(^{ [searchCtr searchBar:nil textDidChange:searchText]; });
             
@@ -56,7 +56,7 @@ describe(@"SearchViewController", ^{
             });
         });
         
-        context(@"with search:google", ^{
+        context(@"with search:unvliadsearch", ^{
         	let(searchText, ^{ return @" unVlidSearch "; });
             beforeEach(^{ [searchCtr searchBar:nil textDidChange:searchText]; });
             
