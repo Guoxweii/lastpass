@@ -18,6 +18,7 @@ profile
 DerivedData
 *.hmap
 *.ipa
+lastpass.xcworkspace/xcuserdata/gxw.xcuserdatad/UserInterfaceState.xcuserstate
 
 # CocoaPods
 Pods
