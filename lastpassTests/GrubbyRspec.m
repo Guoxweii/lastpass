@@ -44,7 +44,7 @@ describe(@"Grubby", ^{
         });
         
         context(@"with valid and useful url", ^{
-        	let(url, ^{ return @"http://192.168.37.104/password.html"; });
+        	let(url, ^{ return @"http://127.0.0.1/password.html"; });
             beforeEach(^{ [[Grubby instance] fetch_remote_html:url]; });
             afterEach(^{ [[Grubby instance] resetDataSource]; });
             
