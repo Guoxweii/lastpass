@@ -39,14 +39,17 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    if (_pinCtr) {
+        [_pinCtr dismissViewControllerAnimated:NO completion:nil];
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     if(![[[AppInfo instance] current_valid] isEqualToString:@"valid"]) {
-    	pinController *pinCtr = [[pinController alloc] initWithNibName:@"pinController" bundle:nil];
-        [self.window.rootViewController presentViewController:pinCtr animated:YES completion:nil];
+    	_pinCtr = [[pinController alloc] initWithNibName:@"pinController" bundle:nil];
+        [self.window.rootViewController presentViewController:_pinCtr animated:YES completion:nil];
     }
 }
 
